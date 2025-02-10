@@ -1463,3 +1463,29 @@ section,
 .contentDiv {
   width: 80%;
 }
+
+/*---------------------------------------------------------------
+# Hoverable Image Section
+---------------------------------------------------------------*/
+.hover-container {
+  position: relative;
+  overflow: visible; /* Allow the image to pop out of its container */
+}
+
+.hover-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1; /* Ensure it is above other content */
+}
+
+.hover-container:hover .hover-image {
+  transform: scale(1.5); /* Scale up the image */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Add a shadow for emphasis */
+  position: absolute; /* Break out of the container */
+  left: 50%; /* Center the image horizontally */
+  top: 50%; /* Center the image vertically */
+  transform: translate(-50%, -50%) scale(1.5); /* Center and scale */
+  z-index: 999; /* Ensure it stays on top of other elements */
+  background: white; /* Optional: Add a background to highlight the pop-out */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
