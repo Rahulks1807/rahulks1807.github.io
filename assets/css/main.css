@@ -1489,3 +1489,17 @@ section,
   background: white; /* Optional: Add a background to highlight the pop-out */
   border-radius: 10px; /* Optional: Add rounded corners */
 }
+
+.video-container .img-fluid {
+  width: 450px !important;
+  height: 350px !important;
+}
+
+.bgNone {
+  background: none !important;
+}
+/* 
+.buttonContent {
+  width: 100%;
+  text-align: center;
+} */
