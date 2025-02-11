@@ -1498,8 +1498,9 @@ section,
 .bgNone {
   background: none !important;
 }
-/* 
+
 .buttonContent {
-  width: 100%;
-  text-align: center;
-} */
+  width: 100% !important;
+  text-align: center !important;
+  color: #fff !important;
+}
